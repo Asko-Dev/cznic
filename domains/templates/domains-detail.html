@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+  {% block content %}
+      <article class="media content-section">
+        <div class="media-body">
+          <h3><a class="article-title text-info" href="#">{{ object.FQDN }}</a></h3>
+            <li class="article-content mr-4"><b>Created:</b> {{ object.date_created }}</li>
+            <li class="article-content mr-4"><b>Expires:</b> {{ object.date_expires }}</li>
+            <li class="article-content mr-4"><b>Deletion Date:</b> {{ object.date_deletion }}</li>
+            <p></p>
+          {% for obj_flag in object.flag.all %}
+            <h6 class="article-content"><b>Domain Flags:</b></h6>
+              <div class="group">
+                <li class="text-steel ml-3">{{ obj_flag.type }}</li>
+                <li class="text-secondary ml-5">Valid from: {{ obj_flag.flag_valid_from }}</li>
+                <li class="text-secondary ml-5">Valid to: {{ obj_flag.flag_valid_to }}</li>
+              </div>
+          {% endfor %}
+        </div>
+      </article>
+  {% endblock %}
