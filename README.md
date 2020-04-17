@@ -15,5 +15,5 @@
 - Unittests for Detail page
 - Crispy forms (Bootstrapping) for web app frontend
 
-  <img src="{% static 'images/screen1.png' %}" class="img-fluid">
-  <img src="{% static 'images/screen2.png' %}" class="img-fluid">
+  <img src="/static/images/screen1.png" height="200" width="350">
+  <img src="/static/images/screen2.png" height="200" width="350">
