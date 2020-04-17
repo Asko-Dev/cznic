@@ -13,9 +13,9 @@ urlpatterns = [
         name='existing-domains'
     ),
     path(
-        'expired/',
-        views.ExpiredDomainListView.as_view(),
-        name='expired-domains'
+        'deleted/',
+        views.DeletedDomainListView.as_view(),
+        name='deleted-domains'
     ),
     path(
         'domain/<int:pk>/',

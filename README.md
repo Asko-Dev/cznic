@@ -8,7 +8,7 @@
 - <b>Web app:</b>
   - "All domains" list (displays domain name + flags)
   - "Active domains" list (displays domain name + flags)
-  - "Expired domains" list (displays domain name + flags)
+  - "Deleted domains" list (displays domain name + flags)
   - "Eel on Musk"
   - Detail page for each domain
     - Displays details like FQDN, creation date, expiration date, deletion date

@@ -23,10 +23,10 @@ class ExistingDomainListView(DomainListView):
         return self.queryset.filter(date_deletion__gte=timezone.now())
 
 
-# List view for only expired domains
-class ExpiredDomainListView(DomainListView):
+# List view for only deleted domains
+class DeletedDomainListView(DomainListView):
     """Lists existing Domains"""
-    template_name = 'expired-domains.html'
+    template_name = 'deleted-domains.html'
 
     def get_queryset(self):
         return self.queryset.filter(date_deletion__lt=timezone.now())
