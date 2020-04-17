@@ -3,6 +3,7 @@ from django.core.validators import RegexValidator
 
 
 # Flag model, Flags will be assigned to Domains
+# Required only Type in case dummy flag is needed
 class DomainFlag(models.Model):
     """Domain Flad for Domain"""
 
@@ -25,7 +26,8 @@ class DomainFlag(models.Model):
         return self.type
 
 
-# main domain model to which flags will get assigned
+# Main domain model to which flags will get assigned
+# All fields required, I assume they're needed straight from beginning
 class Domain(models.Model):
     """Main Domain model"""
     FQDN = models.CharField(

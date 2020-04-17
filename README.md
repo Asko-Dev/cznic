@@ -3,6 +3,7 @@
 <h4><b>Domain list service</b></h4>
 
 - Domain creation from admin panel (can attach domain flags)
+- RegexValidator for domain validation
 - Domain flag creation from admin panel
 - <b>Web app:</b>
   - "All domains" list (displays domain name + flags)
