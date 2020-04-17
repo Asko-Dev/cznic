@@ -15,5 +15,5 @@
 - Unittests for Detail page
 - Crispy forms (Bootstrapping) for web app frontend
 
-  <img src="/domains/static/images/screen1.png" height="750" width="1350">
-  <img src="/domains/static/images/screen2.png" height="750" width="1350">
+  <img src="/domains/static/images/screen1.png" height="750" width="1050">
+  <img src="/domains/static/images/screen2.png" height="750" width="1050">
