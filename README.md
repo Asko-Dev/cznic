@@ -14,3 +14,6 @@
     - Displays all domain flags and their validation dates
 - Unittests for Detail page
 - Crispy forms (Bootstrapping) for web app frontend
+
+  <img src="{% static 'images/screen1.png' %}" class="img-fluid">
+  <img src="{% static 'images/screen2.png' %}" class="img-fluid">
