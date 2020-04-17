@@ -1,6 +1,6 @@
 <h2>CZ NIC Python test</h2>
 
-<h4><b>Domain list service</b></h2>
+<h4><b>Domain list service</b></h4>
 
 - Domain creation from admin panel (can attach domain flags)
 - Domain flag creation from admin panel
@@ -15,5 +15,5 @@
 - Unittests for Detail page
 - Crispy forms (Bootstrapping) for web app frontend
 
-  <img src="/static/images/screen1.png" height="200" width="350">
-  <img src="/static/images/screen2.png" height="200" width="350">
+  <img src="/domains/static/images/screen1.png" height="250" width="400">
+  <img src="/domains/static/images/screen2.png" height="250" width="400">
