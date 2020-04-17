@@ -1,6 +1,7 @@
 <h2>CZ NIC Python test</h2>
 
-<h4><b>Domain list</b></h2>
+<h4><b>Domain list service</b></h2>
+
 - Domain creation from admin panel (can attach domain flags)
 - Domain flag creation from admin panel
 - <b>Web app:</b>

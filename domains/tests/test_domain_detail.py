@@ -59,7 +59,7 @@ class DomainDetailDisplay(TestCase):
         self.assertEqual(len(res.context['flags']), 1)
 
     def test_detail_page_more_flags(self):
-        """Testing domain displays correctly"""
+        """Testing domain flags display correctly"""
         domain = sample_domain()
         flag = sample_flag()
         flag2 = sample_flag(type='EXPIRED')
