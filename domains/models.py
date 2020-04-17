@@ -19,7 +19,7 @@ class DomainFlag(models.Model):
     flag_valid_from = models.DateTimeField(blank=True, null=True)
     flag_valid_to = models.DateTimeField(blank=True, null=True)
 
-    REQUIRED_FIELDS = ('type', 'flag_valid_from', 'flag_valid_to',)
+    REQUIRED_FIELDS = ('type',)
 
     def __str__(self):
         return self.type
@@ -30,7 +30,7 @@ class Domain(models.Model):
     """Main Domain model"""
     FQDN = models.CharField(
         max_length=255,
-        help_text='Fully Qualified Domain Name',
+        help_text='Fully Qualified Domain Name: www.yourdomain.com',
         unique=True,
         validators=[RegexValidator(
             '^www+\.[a-z0-9]+\.[a-z0-9]{1,4}$',
