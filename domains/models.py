@@ -16,8 +16,8 @@ class DomainFlag(models.Model):
         max_length=20,
         default='EXPIRED'
     )
-    flag_valid_from = models.DateTimeField()
-    flag_valid_to = models.DateTimeField()
+    flag_valid_from = models.DateTimeField(blank=True, null=True)
+    flag_valid_to = models.DateTimeField(blank=True, null=True)
 
     REQUIRED_FIELDS = ('type', 'flag_valid_from', 'flag_valid_to',)
 

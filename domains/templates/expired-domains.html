@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+  {% block content %}
+    {% for domain in domains %}
+      <article class="media content-section">
+        <div class="media-body">
+          <h3><a class="article-title text-info" href="{% url 'domain-detail' domain.id %}">{{ domain.FQDN }}</a></h3>
+            {% for obj in domain.flag.all %}
+            <li class="article-content mr-4">{{ obj.type }}</li>
+            {% endfor %}
+        </div>
+      </article>
+    {% endfor %}
+  {% endblock %}

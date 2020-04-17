@@ -7,8 +7,8 @@
             <li class="article-content mr-4"><b>Expires:</b> {{ object.date_expires }}</li>
             <li class="article-content mr-4"><b>Deletion Date:</b> {{ object.date_deletion }}</li>
             <p></p>
+          <h6 class="article-content"><b>Domain Flags:</b></h6>
           {% for obj_flag in object.flag.all %}
-            <h6 class="article-content"><b>Domain Flags:</b></h6>
               <div class="group">
                 <li class="text-steel ml-3">{{ obj_flag.type }}</li>
                 <li class="text-secondary ml-5">Valid from: {{ obj_flag.flag_valid_from }}</li>
